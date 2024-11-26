@@ -17,35 +17,42 @@ export const Table = ({ data, fetchData, loading, handleEdit, setLoading }) => {
   // as well as adding the buttons to edit and delete the task
   useEffect(() => {
     if (data) {
-      const transformedData = data.map((item) => ({
-        ...item,
-        state: (
-          <div className="state-holder">
-            <input
-              type="checkbox"
-              checked={item.completed}
-              onChange={() => handleCheckboxChange(item.id, item.completed)}
-            />
-            {item.completed ? (
-              <p className="state-completed">Completado</p>
-            ) : (
-              <p className="state-pending">Pendiente</p>
-            )}
-          </div>
-        ),
-        actions: (
-          <div className="action-holder">
-            <i
-              className="pi pi-pencil action-button"
-              onClick={() => handleEdit(item)}
-            ></i>
-            <i
-              className="pi pi-trash action-button"
-              onClick={confirmDelete(item.id)}
-            ></i>
-          </div>
-        ),
-      }));
+      const transformedData = data
+        .map((item) => ({
+          ...item,
+          state: (
+            <div className="state-holder">
+              <input
+                type="checkbox"
+                checked={item.completed}
+                onChange={() => handleCheckboxChange(item.id, item.completed)}
+              />
+              {item.completed ? (
+                <p className="state-completed">Completado</p>
+              ) : (
+                <p className="state-pending">Pendiente</p>
+              )}
+            </div>
+          ),
+          actions: (
+            <div className="action-holder">
+              <i
+                className="pi pi-pencil action-button"
+                onClick={() => handleEdit(item)}
+              ></i>
+              <i
+                className="pi pi-trash action-button"
+                onClick={confirmDelete(item.id)}
+              ></i>
+            </div>
+          ),
+        }))
+        .sort((a, b) => {
+          // Sort the tasks so that the uncompleted ones are at the top
+          if (!a.completed && b.completed) return -1;
+          if (a.completed && !b.completed) return 1;
+          return 0;
+        });
       setTasks(transformedData);
     }
   }, [data]);

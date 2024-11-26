@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<img src="public/dgamerstudio_cover.jpg" alt="DGamerStudio"  />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DGamerStudio Technical Project!
 
-## Available Scripts
+This is a technical test project for DGamerStudio, built using [React.js](https://react.dev/) and [PrimeReact](https://primereact.org/). The project features a complete task management system, including **CRUD functionality**:
 
-In the project directory, you can run:
+- **Create** new tasks,
+- **Read** and list tasks in a paginated table,
+- **Update** existing tasks
+- **Delete** tasks.
 
-### `npm start`
+These features make it a fully functional task management system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is also deployed on Vercel. You can access it [here](https://dgamerstudio.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project, you will need the following:
 
-### `npm run build`
+- **Node.JS**: Version 16.8 or higher
+- **npm**: Package manager for Node.js. It comes bundled with Node.js.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started, first clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Diego-Bonora/DGamerStudio-Frontend
+cd DGamerStudio-Frontend
+```
 
-### `npm run eject`
+### Install Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install the project dependencies using npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run the Development Server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the dependencies are installed, you can start the development server with the following command:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will run the application on [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Listing**: Displays a list of all tasks in a paginated table.
+- **Order**: The tasks are sorted so that completed tasks move to the bottom.
+- **Create**: Allows creating new tasks and adding them to the list.
+- **complete**: Allows marking tasks as completed.
+- **Update**: Provides an option to edit existing tasks.
+- **Delete**: Provides an option for deleting tasks.
