@@ -4,9 +4,9 @@
 
 This is a technical test project for DGamerStudio, built using [React.js](https://react.dev/) and [PrimeReact](https://primereact.org/). The project features a complete task management system, including **CRUD functionality**:
 
-- **Create** new tasks,
-- **Read** and list tasks in a paginated table,
-- **Update** existing tasks
+- **Create** new tasks.
+- **Read** and list tasks in a paginated table.
+- **Update** existing tasks.
 - **Delete** tasks.
 
 These features make it a fully functional task management system.
