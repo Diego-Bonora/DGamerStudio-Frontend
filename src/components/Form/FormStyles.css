@@ -1,0 +1,99 @@
+/* Container for the form */
+.form-add-container {
+  width: 30%;
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overall form Styling */
+.form-add-task {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 70%;
+  height: 80%;
+}
+
+.form-title p {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #1f2937;
+  font-weight: 750;
+}
+
+.formError {
+  color: red;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Input styling */
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0px;
+}
+
+.form-input-container p {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.form-input-container textarea,
+.form-input-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #1f2937;
+}
+
+.form-submit-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  background-color: #3b82f6;
+  color: white;
+}
+
+.form-submit-button:hover {
+  background-color: #10b981;
+}
+
+/* Loading form spinner */
+.form-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-form-spinner {
+  width: 50px;
+  height: 50px;
+  animation: rotation 2s linear infinite;
+}
+
+/* Editing styles */
+.editing-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editing-title-container button {
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: 2px solid #e5e7eb;
+}
+
+.editing-title-container button:hover {
+  background-color: #f87171;
+}

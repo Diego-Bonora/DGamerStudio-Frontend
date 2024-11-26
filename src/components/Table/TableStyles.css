@@ -1,0 +1,138 @@
+/* Container for the table */
+.data-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  width: 60%;
+  margin: 0;
+}
+
+/* Overall DataTable Styling */
+.custom-datatable {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Styling */
+.custom-datatable .p-datatable-thead > tr > th {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+/* Row Styling */
+.custom-datatable .p-datatable-tbody > tr > td {
+  padding: 10px;
+  color: #4b5563;
+  font-size: 20px;
+}
+
+.custom-datatable .p-datatable-tbody > tr:hover {
+  background-color: #d4d4d4;
+}
+
+/* Pagination Styling */
+.custom-datatable .p-paginator {
+  martin-top: auto;
+  padding: 10px;
+}
+
+.custom-datatable .p-paginator .p-paginator-page {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Loading table spinner*/
+
+.custom-table-spinner {
+  width: 50px;
+  height: 50px;
+  animation: rotation 2s linear infinite;
+}
+
+.p-progress-spinner-circle {
+  stroke: #3b82f6 !important;
+}
+
+/* Table checkbox for completed state */
+
+.state-holder {
+  display: flex;
+}
+
+.state-holder input {
+  cursor: pointer;
+}
+
+.state-completed {
+  margin: 0;
+  color: #10b981;
+}
+
+.state-pending {
+  margin: 0;
+  color: #f59e0b;
+}
+
+/* Buttons for edit and delet */
+
+.action-holder {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.action-button {
+  color: #3b82f6;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  color: #f87171;
+}
+
+/* Popconfirm styling */
+
+.p-confirm-popup {
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.p-confirm-popup-message {
+  font-size: 1.2rem;
+}
+
+.p-confirm-popup-icon {
+  font-size: 2rem;
+  color: #f87171;
+}
+
+.p-confirm-popup-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-confirm-popup-footer .p-button {
+  background-color: #f87171;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.p-confirm-popup-footer .p-button:hover {
+  background-color: #c0392b;
+}
