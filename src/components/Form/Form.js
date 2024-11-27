@@ -29,11 +29,18 @@ export const Form = ({
     }
   }, [editInfo]);
 
+  const resetForm = () => {
+    handleEdit(null);
+    setTitle("");
+    setDescription("");
+  };
+
   const CreateTask = async (payload) => {
     setLoading(true);
     try {
       await axiosInstance.post("https://test.gmnlab.com/api/tasks", payload);
       fetchData();
+      resetForm();
     } catch (error) {
       console.log(error);
     }
@@ -47,6 +54,7 @@ export const Form = ({
         payload
       );
       fetchData();
+      resetForm();
     } catch (error) {
       console.log(error);
     }
@@ -54,7 +62,7 @@ export const Form = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!title) {
+    if (!title || title.trim() === "") {
       return setErrorMessage(
         "Se necesita un titulo para crear o editar una tarea"
       );
@@ -97,7 +105,7 @@ export const Form = ({
             />
           </div>
           <div className="form-input-container">
-            <p>Descripcion</p>
+            <p>Descripción</p>
             <InputTextarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}

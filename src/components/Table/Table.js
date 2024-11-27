@@ -48,7 +48,6 @@ export const Table = ({ data, fetchData, loading, handleEdit, setLoading }) => {
           ),
         }))
         .sort((a, b) => {
-          // Sort the tasks so that the uncompleted ones are at the top
           if (!a.completed && b.completed) return -1;
           if (a.completed && !b.completed) return 1;
           return 0;
@@ -121,7 +120,7 @@ export const Table = ({ data, fetchData, loading, handleEdit, setLoading }) => {
           ></Column>
           <Column
             field="description"
-            header="Descripcion"
+            header="Descripción"
             style={{ width: "30%" }}
             className="column-description"
           ></Column>
